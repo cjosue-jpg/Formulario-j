@@ -1,6 +1,6 @@
 body{
-    background-color: rgb(71, 202, 235);
-    background-size: cover;
+    background: linear-gradient(to right,#030150,#09068f, #530477, #310147);
+    background-size: contain;
     font-family: inherit;
     margin: 0;
     justify-content: center;
@@ -17,28 +17,67 @@ form{
 }
 
 h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    color: rgb(34, 34, 29);
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px #000;
 }
 
 label{
     display:  table-cell;
-    margin-top: 1opx;
+    margin-top: 5px;
     font-weight: bold;
-    padding: 10px;
-    margin: 10px;
+    padding: 5px;
+    margin: 3px;
+    color: #ebebeb;
+    align-items: self-start;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
 }
 
 button{
-    margin-top: 15px;
+  margin-top: 15px;
   width: 100%;
   padding: 10px;
-  background-color: #0004ff;
+  background-color: #030472;
   border: none;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(120, 237, 248, 0.308);
+    margin: 40px auto;
+    padding: 50px;
+    max-height: 70vh;
+    
+}
 
+input{
+    width: 70%;
+    padding: 5px;
+    margin: 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: #afafafe3;
+}
+
+::placeholder{
+    color: black;
+}
+
+button:active{
+    background-color: #0111f7;
+}
+
+input:active{
+    background-color: rgba(120, 237, 248, 0.308);
+}
